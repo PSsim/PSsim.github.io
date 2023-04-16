@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="keywords" content="AVR, PSS, GOV, Web App, online, power flow solver">
+  <meta name="description" content="Power System Simulation">
+  <meta name="author" content="Andres E. Leon">
+  <meta name="robots" content="index">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="icon" href="imgs/Icon.ico">
+
+  <title>Power Systems</title>
+</head>
+
+
+<body>
+
+  <nav style="display: flex; align-items: center;
+   background-color: var(--colorbase-claro); height: 45px;">
+
+    <div>
+      <img src="imgs/LogoCONICETflag.png" alt="Logo Nav"
+        style="height: 20px; margin-left: 20px; margin-right: 0px; padding: 10px;">
+    </div>
+
+    <div style="color:var(--colortexto-claro);">
+      CONICET
+    </div>
+
+    <ul class="classnav">
+      <!-- <li><a>Models</a>
+        <ul>
+          <li><a href="PDFs\GenericModel.html" target="_blank">Model 1</a></li>
+          <li><a href="">Model 2</a></li>
+          <li><a href="">Model 3</a></li>
+          <li><a href="">Model 4</a></li>
+        </ul>
+      </li> -->
+      <li><a>I'm an ... </a>
+        <!-- <span style="font-size: 0.7em;">&#x25BC;</span> -->
+        <ul>
+          <li><a id="patron1">electrical engineer</a></li>
+          <li><a id="patron2">electronics engineer</a></li>
+          <li><a id="patron3">neither</a></li>
+        </ul>
+      </li>
+
+      <li><a>About</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+
+  </nav>
+
+
+  <div class="classTitulo">
+    <div class="TextTitulo">
+      <h1>Power System Analysis</h1>
+      <h4>Modeling, Control, and Simulation</h4>
+    </div>
+    <div class="ImagTitulo"></div>
+  </div>
+
+
+  <div class="classContenedor">
+
+    <div class="BlockWebApp">
+      <div class="TextWebApp">
+        <span>Web App</span>
+        </br> </br> Power Flow </br> Small-Signal Stability </br> Time-Domain Simulation
+      </div>
+      <div class="ButtonWebApp" onclick="window.open('webapp/main.html', '_blank');">
+        <img src="imgs/IconWebApp.svg" alt="IconApeironWeb"> PS_Sim v0.3
+      </div>
+    </div>
+
+
+    <div class="SectionTitles">
+      <h2> Documentation </h2>
+    </div>
+
+    <aside class="classAside">
+      <div>
+        <img id="NetworkButton" src="imgs/IconNET.png">
+        <span>Electrical Network</span>
+      </div>
+      <div>
+        <img id="CONVgenButton" src="imgs/IconCONV.png">
+        <span>Conventional Generation</span>
+      </div>
+      <div>
+        <img id="RESgenButton" src="imgs/IconRES.png">
+        <span>Renewable Energies</span>
+      </div>
+      <div>
+        <img id="UP" src="imgs/IconConverter.png">
+        <span>Power Converters</span>
+      </div>
+      <div>
+        <img id="ControlButton" src="imgs/IconControl.png">
+        <span>Control System Elements</span>
+      </div>
+    </aside>
+
+    <section class="classContenido">
+      <div class="Network"> Admittance Matrix </div>
+      <div class="Network"> Power Flow </div>
+      <div class="Network"> Short Circuit Impedance </div>
+      <div class="Network"> Loads </div>
+      <div class="Network"> AC Grid </div>
+      <div class="Network"> DC Grid </div>
+      <div class="Network"> DC Transmission Line </div>
+      <div class="Network"> Multiterminal dc (MTDC) System </div>
+      <div class="CONVgen"> Per-unit System </div>
+      <div class="CONVgen WithMaterial" onclick="verPDF('1jwajtPx5y4OM1jWv8IrGdE-LqmLvhDNv')">
+        Coordinate Transformations </div>
+      <div class="CONVgen"> Synchronous Machine </div>
+      <div class="CONVgen RESgen"> Induction Machine </div>
+      <div class="CONVgen"> Automatic Voltage Regulator (AVR) </div>
+      <div class="CONVgen"> Power System Stabilizer (PSS) </div>
+      <div class="CONVgen"> Turbine-Governor System </div>
+      <div class="CONVgen RESgen"> Multi-Mass Systems (Drive Trains) </div>
+      <div class="RESgen WithMaterial" onclick="verPDF('1sBY35mI47assptiz2vdFYZEihJGAHPW8')"> Wind Turbine
+      </div>
+      <div class="RESgen"> Doubly-Fed Induction Generator (DFIG) Based WECS </div>
+      <div class="RESgen"> Full Converter Based WECS </div>
+      <div class="RESgen"> Photovoltaic (PV) System </div>
+      <div class="RESgen"> Energy Storage System (ESS) </div>
+      <div class="PowerConverter"> Voltage-Source Converter (VSC) </div>
+      <div class="PowerConverter"> Modular Multilevel Converter (MMC) </div>
+      <div class="PowerConverter"> High-Voltage dc (HVDC) Link </div>
+      <div class="Control"> Phase-Locked Loop (PLL) </div>
+      <div class="Control"> Vector Control </div>
+      <div class="Control WithMaterial" onclick="verPDF('12BqFvFDh8VhBXs82RwAIK7_Utu3uBz5X')"> Virtual
+        Synchronous Generator
+        (VSG) </div>
+    </section>
+
+
+    <div class="SectionTitles">
+      <h2> Control System Tools </h2>
+    </div>
+
+    <section class="ControlSystemTools">
+      <div> Proportional-Integral (PI) control </div>
+      <div> Lead-Lag Compensator </div>
+      <div> Linear-Quadratic Regulator (LQR) </div>
+      <div> Observer-Based State Feedback Control </div>
+      <div> Two-Degree-of-Freedom (2DOF) Control </div>
+      <div class="WithMaterial" onclick="verPDF('1K6AcXGCYN9MVE1sKrnE0p_9Wa9-t3mw8')">Model-Matching Control </div>
+      <div> Subspace State-Space System Identification (N4SID) </div>
+      <div> Model Reference Adaptive Control (MRAC) </div>
+    </section>
+
+  </div>
+
+
+  <footer>
+    <div class="logo1"> <img src="imgs/LogoUNCOMA.png" alt="LogoUNCOMA"> </div>
+    <div class="logo2"> <img src="imgs/LogoUNS.png" alt="LogoUNS"> </div>
+    <div class="logo3"> <img src="imgs/LogoIIIE.png" alt="LogoIIIE"> </div>
+    <!-- <div class="logo4"> <img src="imgs/LogoCONICET.png" alt="LogoCONICET"> </div> -->
+    <div class="Powered">powered by Apeiron, 2023 </div>
+  </footer>
+
+
+  <script src="home.js"></script>
+
+
+</body>
+
+</html>

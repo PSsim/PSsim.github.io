@@ -1,0 +1,29 @@
+:root {
+   --colorbase-claro: rgb(239, 240, 241);
+   --colorbase-oscuro: rgb(96, 205, 242);
+   --color-oscuro: rgba(49, 54, 59, 0.4);
+   --color-medio: rgb(239, 240, 241);
+   --colortexto-claro: rgb(49, 54, 59);
+   --colorXXXXXX: rgba(32, 38, 57, 0.5);
+
+   --tamano: 20px;
+}
+
+* {
+   /* eliminamos espacios que hay por defecto */
+   margin: 0px;
+   padding: 0px;
+   /* border: 1px solid black; */
+   /* evitar seleccion del texto al pasar el mouse */
+   user-select: none;
+}
+
+body {
+   /*  https://www.svgbackgrounds.com/   */
+   /* background-image: url('electrical-background.svg'); */
+   background-color: #1a1a1a;
+   background-attachment: fixed;
+
+   font-family: 'Open Sans', sans-serif;
+   /* font-family: Arial, sans-serif, Helvetica; */
+}

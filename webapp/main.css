@@ -1,0 +1,81 @@
+.Plots {
+   width: 95%;
+   margin: 10px auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.0em;
+   /* padding: 10px; */
+}
+
+.Plots div {
+   /* background: red; */
+   /* border: 1px solid blue; */
+   /* height: 550px; */
+   width: 100%;
+   /* width: fit-content; */
+   /* display: flex; */
+   /* text-align: center; */
+   /* justify-content: center; */
+   /* align-items: center; */
+   /* margin: auto; */
+}
+
+
+.DataLoadSection {
+   font-size: 0.8em;
+   margin: 10px 10px;
+   color: cornsilk;
+   /* height: 1px; */
+}
+
+.DataLoadSection textarea {
+   font-size: 0.9em;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   color: cornsilk;
+   background-color: rgb(40, 40, 40);
+   width: 100%;
+   resize: none;
+}
+
+
+/* no muestra el texto de py-script */
+.label {
+   display: none !important;
+}
+
+
+
+#mi-div {
+   /* background-color: yellow;
+   height: 200px; */
+   transition: height 1.0s ease;
+}
+
+#mi-div.oculto {
+   height: 0;
+   transition: height 1.0s ease-out;
+   overflow: hidden;
+}
+
+
+
+/* Responsive Web */
+/* estilos para pantallas con ancho menor o igual a 600px */
+@media (max-width: 900px) {
+   .Plots {
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+/* estilos para pantallas con ancho mayor a 600px y menor o igual a 1200px */
+@media (min-width: 901px) and (max-width: 1700px) {
+   .Plots {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+/* estilos para pantallas con ancho mayor a 1200px */
+@media (min-width: 1701px) {
+   /* Estilos CSS aquí */
+}
